@@ -25,9 +25,6 @@ Chapter 7 动态创建标记
 - 语法: `document.createElement(nodeName);`
 - 无论何时,都建议将创造出来的元素复制个一个变量
 
-    ```javascript
-      let para = document.createElement('p');
-    ```
     {% highlight javascript %}
      let para = document.createElement('p');
     {% endhighlight %}
