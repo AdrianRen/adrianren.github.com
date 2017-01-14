@@ -36,21 +36,21 @@ Chapter 7 动态创建标记
 - 语法: `parent.appendChild(child);`
 - 例子:
 
-    ```javascript
+    {% highlight javascript %}
       let testdiv = document.getElementById('testdiv');
       let para = document.createElement('p');
       testdiv.appendChild('para');
       document.getElementById('testdiv').appendChild(document.createElement('p'));
-    ```
+    {% endhighlight %}
 
 5 `createTextNode`
 --
 - 语法: `document.createTextNode(text);`
 - 下面这个代码,将创造出一个内容为"Hello World"的文本节点:
 
-  ```javascript
+  {% highlight javascript %}
   document.createTextNode('Hello World');
-  ```
+  {% endhighlight %}
 
 6 小结:
 --
@@ -60,33 +60,33 @@ Chapter 7 动态创建标记
   --
   1. 创建一个父级元素
 
-  ```html
+  {% highlight html %}
   <div id="testdiv">
       <!-- 创建一个父级元素 -->
   </div>
-  ```
+  {% endhighlight %}
 
   2. 创建一个元素
 
-  ```javascript
+  {% highlight javascript %}
   let para = document.createElement('p');
-  ```
+  {% endhighlight %}
 
   3. 创建文本节点
 
-  ```javascript
+  {% highlight javascript %}
   let txt = document.createTextNode('Hello World');
-  ```
+  {% endhighlight %}
 
   4. 将文本节点拼接到元素节点之上
 
-  ```javascript
+  {% highlight javascript %}
   para.appendChild(txt);
-  ```
+  {% endhighlight %}
 
   5. 将整个`p`元素拼接到父级元素`textdiv`之上
 
-  ```javascript
+  {% highlight javascript %}
   let testdiv = document.getElementById('testdiv');
   testdiv.appendChild(para);
-  ```
+  {% endhighlight %}
