@@ -40,9 +40,7 @@ Chapter 7 动态创建标记
       let testdiv = document.getElementById('testdiv');
       let para = document.createElement('p');
       testdiv.appendChild('para');
-      // 上面的代码可以写为:
       document.getElementById('testdiv').appendChild(document.createElement('p'));
-      //正如所看到的,这样的代码不便于阅读,还是推荐按上面的方式书写
     ```
 
 5 `createTextNode`
