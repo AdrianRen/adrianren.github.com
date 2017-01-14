@@ -28,6 +28,9 @@ Chapter 7 动态创建标记
     ```javascript
       let para = document.createElement('p');
     ```
+    {% highlight javascript %}
+     let para = document.createElement('p');
+    {% endhighlight %}
 
   此时创造出来的`p`元素,成为文档碎片(document fragment),还无法显示在浏览器的窗口里,不过它已经像任何其他的节点那样有了自己的 DOM 属性;
 
